@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+       
+        .carth {
+            height: 70vh;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: start;
+            justify-content: space-evenly;
+
+
+        }
+
+
+        .side {
+            width: 8%;
+            height: 90%;
+            /* border: 2px solid red; */
+            margin: 10px;
+
+        }
+
+        .subside {
+            height: 20%;
+            width: 65%;
+            border: 2px solid;
+            margin: 10px;
+            animation: fadein 1s ease-in-out;
+            background-size: cover;
+        }
+
+        .proimg {
+            width: 25%;
+            height: 90%;
+            /* border: 2px solid red; */
+            margin: 10px;
+            background-image: url("./images/ipho15_1.png");      
+            background-size: 100% 100%;
+            animation: fadein 1s ease-in-out;
+
+        }
+        @keyframes fadein{
+            from{
+                opacity: 0;
+                transform: scale(0.9);
+
+            }
+            to{
+                opacity: 1;
+                transform: scale(1);
+
+            }
+        }
+
+        .proinfo {
+            width: 60%;
+            height: 60%;
+            /* border: 2px solid red; */
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .proinfo ul{
+           color: #101011;
+           margin: 10px 30px;
+        }
+
+        .quntity{
+            display: flex;
+            margin: 20px  20px;
+        }
+        .min , .max{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 2px solid #aaa;
+            font-weight: bold;
+            font-size: larger;
+            background-color: transparent; 
+            
+        }
+        .qun{
+            height: 30px;
+            width: 60px;
+            border: 2px solid #aaa;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: large;
+            margin: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+
+        .placeorder{
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .similerpro{
+            height: 60vh;
+            
+            margin: 20px 0px;
+        }
+
+        .simi1{
+
+            height: 15%;
+            
+            text-align: center;
+            /* padding-top: 10px; */
+            color:rgb(224, 124, 124) ;
+
+            
+        }
+
+        .simi2{
+            height: 80%;
+            
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .simi2 h3{
+            color:rgb(219, 90, 90) ;
+        }
+
+        .simipro{
+            height: 100%;
+            width: 15%;
+            /* border: 2px solid red; */
+            box-shadow: 0px 0px 10px #aaa;
+            margin: 0px 10px;
+            text-align: center;
+        }
+        .simipro h3{
+            position: relative;
+            bottom: 15px;
+        }
+      
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="main">
+            <h1>MARKETING APP</h1>
+        </div>
+        <div class="main">
+            <ol>
+                <li> <a href="index.html"> <button class="Home"> Home</button>   </a> </li>
+                <li> <a href="#cont"> <button class="Home">Contact</button> </a> </li>
+                <!-- <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg></li> -->
+                <li><a href="login.html"><button class="loginbtn">
+                            <p id="logblock"></p>
+                        </button></a></li>
+                <li style="border-radius: 50%; width: 50px;height: 50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path
+                            d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                    </svg></li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="carth">
+
+        <div class="side">
+            <div class="subside" onmousemove="subside(1)"><img src="./images/ipho15_1.png" alt="" height="95%"></div>
+            <div class="subside" onmousemove="subside(2)"><img src="./images/ipho15_2.png" alt="" height="100%"></div>
+            <div class="subside" onmousemove="subside(3)"><img src="./images/ipho15_3.png" alt="" height="90%"></div>
+            <div class="subside" onmousemove="subside(4)"><img src="./images/ipho15_4.png" alt="" height="100%"></div>
+        </div>
+        <div class="proimg" id="proimg"></div>
+        <div class="proinfo" id="proinfo">
+            <h1 class="proname">Apple Iphone 15 Pro Max</h1>
+            <h4 style="color: #aaa;margin: 5px 10px 10px 10px ;"> ₹ 2,071 Rating & 196 Reviews</h4>
+            <h5 style="background-color: green; width: 45px;color: white;text-align: center; border-radius: 5px;">4.6⭐</h5>
+            <h1 class="proprice" id="proprice">112000</h1>
+            <h3>features</h3>
+            <ul>
+                <li>1 TB ROM                                     </li>    
+                <li>17.02 cm (6.7 inch) Super Retina XDR Display </li>     
+                <li>12MP + 12MP + 12MP | 12MP Front Camera       </li>    
+                <li>A15 Bionic Chip Processor                    </li>     
+            </ul>
+
+           <div class="quntity" id="proprice">
+            <button class="min" id="min">-</button><div class="qun" id="qun">1</div><button class="max" id="max">+</button>
+           </div>
+
+           <div class="quntity">
+            <button class="placeorder">Place Order</button>
+            
+           </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="similerpro">
+        <div class="simi1"><h1>Similar Products</h1></div>
+        <div class="simi2">
+            <div class="simipro"><img src="./images/ipho14_1.png" alt="" height="90%" width="100%"><h3>Iphone 14 Pro Max</h3></div>
+            <div class="simipro"><img src="./images/samsung_s23.png" alt="" height="90%" width="100%"><h3>Samsung Galaxy s23</h3></div>
+            <div class="simipro"><img src="./images/samsung_s24.png" alt="" height="90%" width="100%"><h3>Samsung Galaxy s24</h3></div>
+            <div class="simipro"><img src="./images/oppo_reno.png" alt="" height="90%" width="100%"><h3>Oppo Reno 12 pro</h3></div>
+            <div class="simipro"><img src="./images/vivo.png" alt="" height="90%" width="100%"><h3>Vivo V30 Pro</h3></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="cont" id="cont" style="height: 50vh;">
+        <div class="detl">
+            <h1 style="color:  rgb(239, 78, 78);">Contact Us</h1>
+            <h4>There are many ways to contact us. You may drop us a line, give us a call or send an email, choose what
+                suits you the most.</h4>
+
+            <h4>(800) 686-6688 <br> info.deercreative@gmail.com</h4>
+
+            <h4></h4>
+
+            <h4>mm</h4>
+
+            <h4>Open hours: 8.00-18.00 Mon-Fri <br> Sunday: Closed</h4>
+
+            <h1 style="color:  rgb(239, 78, 78);">Follow Us</h1>
+                <div class="icon">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+           
+
+        </div>
+        <div class="contform">
+            <h1>Get In Touch With Us!</h1>
+            <h4>Fill out the form below to recieve a free and confidential.</h4>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="text" placeholder="Website"><br>
+            <textarea name="" id="" placeholder="Message"></textarea><br>
+            <button>SEND MESSAGE</button>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="account.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

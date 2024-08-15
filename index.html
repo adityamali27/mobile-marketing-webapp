@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main">
+            <h1>MARKETING APP</h1>
+        </div>
+        <div class="main">
+            <ol>
+                <li> <a href="#sec1"> <button class="Home"> Home</button>    </a> </li>
+                <li> <a href="#cont"> <button class="Home">Contact</button>  </a> </li>
+                <!-- <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg></li> -->
+                <li><a href="login.html"><button class="loginbtn"><p id="logblock"></p></button></a></li>
+                <li style="border-radius: 50%; width: 50px;height: 50px;"><a href="Cart.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000">
+                    <path
+                        d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                </svg></a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <header>
+        <div class="sec1" id="sec1">
+            <div class="con">
+                <center>
+                    <h4>GET THE BEST PHONES AT THE BEST PRICE</h4>
+                </center>
+                <h1> Get up to 30% Off New Arrivals</h1>
+                <a href="#brand "> <button>SHOP NOW</button></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="brand" id="brand">
+            <div class="hed">
+                <h1>TOP BRANDS</h1>
+            </div>
+            <div class="comp">
+                <div class="com" id="samsung"> <button onclick="every()">All</button></div>
+                <div class="com" id="samsung"> <button onclick="samsung()">SAMSUNG</button></div>
+                <div class="com" id="Apple"><button onclick="Apple()">APPLE</button></div>
+                <div class="com" id="oneplus"><button onclick="oneplus()">ONE PLUS</button></div>
+                <div class="com" id="Realme"><button onclick="realme()">REALME</button></div>
+                <div class="com" id="Xiaomi"><button onclick="xiaomi()">XIAOMI</button></div>
+            </div>
+            <div class="pro" id="pro1">
+                <div class="pro1" id="Apple1">
+                    <div class="pic"><img src="./images/product_1.png" alt="" height="100%" width="90%"
+                            style="margin: 10px"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Iphone 15 Pro Max</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 1,12,000 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                1,29,000</STrike></P>
+                        <button  class="cart" onclick="cart(1)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="Apple2">
+                    <div class="pic"><img src="./images/product_2.png" alt="" height="100%" width="90%"
+                            style="margin: 10px;"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Apple Iphone 14</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 65,000</P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                70,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="sam1">
+                    <div class="pic"><img src="./images/product_3.png" alt="" height="100%" width="100%"
+                            style="margin-top: 10px;"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Samsung S22 Ultra</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 1,20,000</P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                1,39,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="sam2">
+                    <div class="pic"><img src="./images/product_4.png" alt="" height="100%" width="90%"
+                            style="margin-left: 10px;"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Samsung S21 Ultra
+                        </p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 90,000 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                1,15,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+               
+                <div class="pro1" id="redmi1">
+                    <div class="pic"><img src="./images/product_10.png" alt="" height="95%" width="100%"
+                            style="margin-top: 10px;"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Redmi Note 10 S
+                        </p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 20,000</P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                30,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="pro" id="pro2">
+
+                <div class="pro1" id="one1">
+                    <div class="pic"><img src="./images/product_5.png" alt="" height="100%" width="100%"
+                            style="margin-top: 10px;"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Oneplus 10 Pro 5G</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 70,000</P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                80,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+
+
+                <div class="pro1" id="one2">
+                    <div class="pic"><img src="./images/product_6.png" alt="" height="100%" width="100%"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Oneplus Nord 2</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 25,000 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                35,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="real1">
+                    <div class="pic"><img src="./images/product_7.png" alt="" height="100%" width="100%"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Realme GT 2 Pro</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 55,000 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹ 55,000
+                            </STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="real2">
+                    <div class="pic"><img src="./images/product_8.png" alt="" height="100%" width="100%"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Realme x7 Pro 5G</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 29,999 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                33,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="pro1" id="xio1">
+                    <div class="pic"><img src="./images/product_9.png" alt="" height="100%" width="100%"></div>
+                    <div class="info">
+                        <p style="margin: 20px 10px 10px; font-weight: bolder;">Xiaomi 11T Pro 5G</p>
+                        <P style="margin-left: 20px; font-weight: bolder; color: red;font-size: larger;">₹ 50,000 </P>
+                        <P style="font-size: small; color: #AAA; margin-left: 20px;font-size: medium;"> <STrike>₹
+                                58,000</STrike></P>
+                        <button class="cart" onclick="cart()">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="add">
+        <img src="./images/super-sale-mega-sale-flash-sale-final-sale-banner-stock-illustration_665638-743.jpg" alt=""
+            width="100%" height="400px">
+    </div>
+
+
+    <article>
+        <div class="pros">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#EA3323">
+                    <path
+                        d="M229.41-160.67q-49.41 0-84.08-34.61-34.66-34.61-34.66-84.05H40v-454q0-27 19.83-46.84Q79.67-800 106.67-800h572.66v164.67h110l130.67 174v182h-74q0 49.44-34.59 84.05t-84 34.61q-49.41 0-84.08-34.61-34.66-34.61-34.66-84.05H348q0 49.33-34.59 84-34.59 34.66-84 34.66Zm-.08-66.66q21.67 0 36.84-15.17 15.16-15.17 15.16-36.83 0-21.67-15.16-36.84-15.17-15.16-36.84-15.16-21.66 0-36.83 15.16-15.17 15.17-15.17 36.84 0 21.66 15.17 36.83 15.17 15.17 36.83 15.17ZM106.67-346H132q17-24 41.69-38.33 24.7-14.34 55-14.34Q259-398.67 284-384q25 14.67 42 38h286.67v-387.33h-506V-346Zm620.66 118.67q21.67 0 36.84-15.17 15.16-15.17 15.16-36.83 0-21.67-15.16-36.84-15.17-15.16-36.84-15.16-21.66 0-36.83 15.16-15.17 15.17-15.17 36.84 0 21.66 15.17 36.83 15.17 15.17 36.83 15.17Zm-48-202.67H860L756-568.67h-76.67V-430ZM360-532.67Z" />
+                </svg>
+            </div>
+            <div class="iconinfo">
+                <h3>FREE SHIPPING</h3>
+                <h5>Suffered Alteration in Some Form</h5>
+            </div>
+        </div>
+        <div class="pros">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#EA3323">
+                    <path
+                        d="M546.67-426.67q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM240-293.33q-27.5 0-47.08-19.59-19.59-19.58-19.59-47.08v-373.33q0-27.5 19.59-47.09Q212.5-800 240-800h613.33q27.5 0 47.09 19.58Q920-760.83 920-733.33V-360q0 27.5-19.58 47.08-19.59 19.59-47.09 19.59H240ZM333.33-360H760q0-39 27.17-66.17 27.16-27.16 66.16-27.16V-640q-39 0-66.16-27.17Q760-694.33 760-733.33H333.33q0 39-27.16 66.16Q279-640 240-640v186.67q39 0 66.17 27.16Q333.33-399 333.33-360ZM800-160H106.67q-27.5 0-47.09-19.58Q40-199.17 40-226.67V-680h66.67v453.33H800V-160ZM240-360v-373.33V-360Z" />
+                </svg>
+            </div>
+            <div class="iconinfo">
+                <h3>CACH ON DELIVERY</h3>
+                <h5>The Internet Tend To Repeat</h5>
+            </div>
+        </div>
+        <div class="pros">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#EA3323">
+                    <path
+                        d="M480-80q-75 0-140.5-28.17-65.5-28.16-114.33-77-48.84-48.83-77-114.33Q120-365 120-440h66.67q0 122.33 85.5 207.83 85.5 85.5 207.83 85.5 122.33 0 207.83-85.5 85.5-85.5 85.5-207.83 0-122.33-83.83-207.83-83.83-85.5-206.17-85.5H466L535.33-664l-46 47.33L338-768l151.33-151.33 46 46.66L462.67-800H480q75 0 140.5 28.17 65.5 28.16 114.33 77 48.84 48.83 77 114.33Q840-515 840-440t-28.17 140.5q-28.16 65.5-77 114.33-48.83 48.84-114.33 77Q555-80 480-80Z" />
+                </svg>
+            </div>
+            <div class="iconinfo">
+                <h3>45 DAYS RETURN</h3>
+                <h5>Making it Look Like Readable</h5>
+            </div>
+        </div>
+        <div class="pros">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#EA3323">
+                    <path
+                        d="m622-288.67 48.67-48.66-155.34-156v-195.34h-66.66v222l173.33 178ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-82.33 31.5-155.33 31.5-73 85.83-127.34Q251.67-817 324.67-848.5T480-880q82.33 0 155.33 31.5 73 31.5 127.34 85.83Q817-708.33 848.5-635.33T880-480q0 82.33-31.5 155.33-31.5 73-85.83 127.34Q708.33-143 635.33-111.5T480-80Zm0-400Zm0 333.33q137.67 0 235.5-97.83 97.83-97.83 97.83-235.5 0-137.67-97.83-235.5-97.83-97.83-235.5-97.83-137.67 0-235.5 97.83-97.83 97.83-97.83 235.5 0 137.67 97.83 235.5 97.83 97.83 235.5 97.83Z" />
+                </svg>
+            </div>
+            <div class="iconinfo">
+                <h3>OPENING ALL WEEK</h3>
+                <h5>8AM - 09PM</h5>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+
+        <div class="foot">
+            <h2>Newsletter</h2>
+            <h4>Subscribe to our newsletter and get 20% off your first purchase</h4>
+        </div>
+        <div class="foot">
+            <input type="search" placeholder="Your Email">
+            <button>SUBSCRIBE</button>
+        </div>
+    </footer>
+
+    <div class="cont" id="cont">
+        <div class="detl">
+            <h1 style="color:  rgb(239, 78, 78);">Contact Us</h1>
+            <h4>There are many ways to contact us. You may drop us a line, give us a call or send an email, choose what
+                suits you the most.</h4>
+
+            <h4>(800) 686-6688 <br> info.deercreative@gmail.com</h4>
+
+            <h4></h4>
+
+            <h4>mm</h4>
+
+            <h4>Open hours: 8.00-18.00 Mon-Fri <br> Sunday: Closed</h4>
+
+            <h1 style="color:  rgb(239, 78, 78);">Follow Us</h1>
+                <div class="icon">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+           
+
+        </div>
+        <div class="contform">
+            <h1>Get In Touch With Us!</h1>
+            <h4>Fill out the form below to recieve a free and confidential.</h4>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="text" placeholder="Website"><br>
+            <textarea name="" id="" placeholder="Message"></textarea><br>
+            <button>SEND MESSAGE</button>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+    <script src="account.js"></script>
+</body>
+
+</html>
